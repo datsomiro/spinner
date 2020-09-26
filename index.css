@@ -1,0 +1,51 @@
+
+
+
+.spinner{
+    width:30vh;
+    height:30vh;
+    background-image: url(img/spinner.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: thistle;
+    animation:  nd 4s linear infinite ;
+    box-shadow: 0 0 2px 2px black;
+    border-radius: 50%;
+    
+}   
+@keyframes first {
+    
+   0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:100vh; top:0px;}
+  50%  {background-color:blue; left:400px; top:400px;}
+  75%  {background-color:green; left:0px; top:400px;}
+  100% {background-color:red; left:0px; top:0px;}
+  
+}
+@keyframes nd {
+    from {
+    transform: rotateZ(0deg);
+    width: 5vh;
+    height: 5vh;
+}
+    to{
+    transform: rotateZ(360deg);
+    width: 30vh;
+    height: 30vh;
+}
+    0%   {background-color:red; left:0px; top:0px;width: 5vh;
+    height: 5vh;}
+    12.5%  {background-color:yellow; left:180vh; top:0px;}
+    25%  {background-color:blue; left:0vh; top:75vh;}
+    37.5%  {background-color:green; left:180vh; top:75vh;}
+    50% {background-color:red; left:0px; top:0px;width: 30vh;
+    height: 30vh;} 
+    62.5%   {background-color:yellow; left:180vh; top:0px;}
+    75%  {background-color:blue; left:0vh; top:75vh;}
+    87.5%  {background-color:green; left:180vh; top:75vh;}  
+    100% {background-color:red; left:0px; top:0px;width: 5vh;
+    height: 5vh;}     
+}
+
+
